@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(193, 222, 222);
+}
+
+/*--------------------- header style start ----------------------*/
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    padding: 3rem 2rem;
+}
+
+.main-logo {
+    color: #333;
+    font-weight: 900;
+    margin-bottom: 1rem;
+    margin-left: 1rem;
+}
+
+.Search-container {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    max-width: 500px;
+    width: 50%;
+    border-radius: 0.5rem 0.5rem 0.5rem 0.5rem;
+    margin-right: 5rem;
+    margin-left: 1rem;
+}
+
+.Search-container input {
+    min-width: 15px;
+    border: none;
+    flex-grow: 1;
+    padding: 1rem;
+    border: 1px solid black;
+    border-radius: 0.5rem 0 0 0.5rem;
+    font-weight: 500;
+    font-size: medium;
+}
+
+.Search-container button {
+    border: 1px solid black;
+    padding: 1rem;
+    outline: none;
+    border-radius: 0 0.5rem 0.5rem 0;
+    font-weight: 800;
+    background-color: rgb(244, 244, 197);
+    cursor: pointer;
+}
+
+.Search-container button:hover {
+    background-color: rgb(243, 243, 170);
+}
+
+/*------------------ header style end ----------------------*/
+
+
+/*----------------- main container style start ------------------*/
+.main-container {
+    margin-top: 2rem;
+    display: flex;
+}
+
+/*-------------- inner container style start -----------------*/
+/*-------------- inner container midal part style start -----------------*/
+.output {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 3rem;
+    padding: 2rem;
+}
+
+.output-cityname {
+    font-size: 35px;
+    margin-top: 2rem;
+    font-weight: 400;
+}
+
+.temp {
+    margin-bottom: 5rem;
+    font-size: 50px;
+    font-weight: 900;
+}
+
+.sup {
+    font-weight: 200;
+}
+
+/*-------------- inner container midal part style end -----------------*/
+
+/*-------------- inner container bottom part style start -----------------*/
+.bottom-output {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 90px;
+}
+
+.buttom-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 150px;
+    width: 200px;
+    padding: 2rem 3rem;
+    border-radius: 2rem;
+    background-color: rgb(177, 210, 238);
+}
+
+.icon {
+    margin-bottom: 0.6rem;
+    font-size: 2rem;
+    color: rgb(9, 9, 9);
+}
+
+.firstpara {
+    font-weight: 900;
+    font-size: medium;
+    margin-bottom: 0.1rem;
+}
+
+.secondpara {
+    color: rgb(244, 10, 21);
+}
+
+/*-------------- inner container bottom part style end -----------------*/
+/*-------------- inner container style end -----------------*/
+/*----------------- main container style end ------------------*/
+
+@media (max-width:700px) {
+    .header-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .Search-container {
+        margin: auto;
+    }
+    .output-cityname {
+        text-align: center;
+        width: 100%;
+        display: block;
+        margin: 2rem auto 0 auto;
+    }
+    
+}
