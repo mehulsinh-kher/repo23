@@ -1,0 +1,11 @@
+
+FROM nginx
+
+WORKDIR /app
+
+COPY . /usr/share/nginx/html/
+
+RUN mv /usr/share/nginx/html/calculator.html /usr/share/nginx/html/index.html
+
+EXPOSE 80
+
