@@ -1,0 +1,8 @@
+FROM nginx
+LABEL maintainer="your-email@example.com"
+WORKDIR /app
+
+COPY . /usr/share/nginx/html
+
+EXPOSE 80
+
