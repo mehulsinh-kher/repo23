@@ -1,0 +1,19 @@
+#Workflow name
+name: Hello
+
+#trigger for run
+on:
+  push:
+    branches: [master]
+
+#jobs in workflow
+jobs:
+
+  #names of jobs
+  greet:
+    #Runners for jobs
+    runs-on: ubuntu-latest
+    steps:
+      - name: say hello to users
+      - run: echo "Hello Dosto"
+      
