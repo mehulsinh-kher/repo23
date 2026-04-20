@@ -1,4 +1,4 @@
-name: CICD_Dispatch
+name: dispatch-flow
 
 on:
   workflow_dispatch:
