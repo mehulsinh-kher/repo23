@@ -27,5 +27,5 @@ jobs:
   deploy:
     runs-on: ubuntu-slim
     steps:
-      - name: Deploying
+      - name: Deploying App
         run: echo "Docker Deployed The APP"
