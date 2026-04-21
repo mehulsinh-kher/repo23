@@ -1,0 +1,30 @@
+name: docker-pipeline
+
+on: 
+  workflow_dispatch:
+
+jobs:
+
+  code:
+    runs-on: ubuntu-latest
+    steps:
+    - name: code fetching
+      run: echo "code fetching"
+      
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: code building
+      run: echo "code builded"
+      
+  test:
+    runs-on: ubuntu-latest
+    steps:
+    - name: code testing
+      run: echo "code testing"
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: code deploying
+      run: echo "code deploying"
