@@ -1,4 +1,4 @@
-name: docker-pipeline
+name: docker-pipe
 
 on: 
   workflow_dispatch:
