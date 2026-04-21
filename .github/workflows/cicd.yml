@@ -1,4 +1,4 @@
-name: cicd
+name: docker pipeline
 
 on:
   push:
@@ -9,25 +9,25 @@ on:
 jobs:
 
   code:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
       - name: Checkout Code
         run: echo "code clone from github"
 
   build:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
       - name: Build Docker Container
         run: echo "Docker Container Builded"
 
   test:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
       - name: Testing Code
         run: echo "Code Tested"
 
   deploy:
-    runs-on: ubuntu-slim
+    runs-on: ubuntu-latest
     steps:
       - name: Deploying App
         run: echo "Docker Deployed The APP"
